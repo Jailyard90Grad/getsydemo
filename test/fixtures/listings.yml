@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  price: 9.99
+  name: Gma's molasses cookies
+  description: A bakers' dozen of the best tasting molasses cookies ever!
+  price: 19.99
 
 two:
-  name: MyString
-  description: MyText
-  price: 9.99
+  name: The kitchen sink
+  description: Everything else you could ever want
+  price: 99.99
+
+ three:
+  name: A land that time forgot
+  description: Dinos - anklos - pteras and more
+  price: 199.99
