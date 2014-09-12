@@ -12,11 +12,15 @@ Investigate using AWS for image hosting instead of Dropbox
 Investigate using Auth.net instead of Stripe
 Add-in search module
 Install Rails/JCrop capability
+Added BH gem - maybe use it....
+
 
 
 RESOURCES
 Carbon 5 - Rails consultancy
 Collecive Idea - Holland, MI dev/training company
+Logical Reality Design
+Fullscreen
 
 9/6
 Installed DB gem
