@@ -11,4 +11,6 @@ class Listing < ActiveRecord::Base
 	validates_attachment_content_type :image, content_type: %w(image/jpeg image/jpg image/png)
 	validates :name, :description, :price, presence: true
 	validates :price, numericality: { greater_than: 0 }
+
+	belongs_to :user
 end
