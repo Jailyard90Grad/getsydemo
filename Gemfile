@@ -18,6 +18,8 @@ gem 'paperclip-dropbox', '>= 1.1.7'
 gem 'figaro'
 gem 'devise'
 gem 'bh', '~> 1.0'
+gem 'sprockets'
+gem 'jquery-turbolinks'
 
 group :production do
 	gem 'pg'
