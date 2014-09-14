@@ -4,13 +4,16 @@ Rails.application.routes.draw do
 
   root 'listings#index'
 
-  # get 'about' => 'pages#about', as: 'about'
-  # get 'contact' => 'pages#contact'
+  get 'about' => 'pages#about', as: 'about'
+  get 'contact' => 'pages#contact'
+  get 'seller' => 'listings#seller'
+  get 'terms' => 'pages#terms'
+  get 'privacy' => 'pages#privacy'
 
-  match '/about',   to: 'pages#about',    via: 'get'
-  match '/contact', to: 'pages#contact',  via: 'get'
-  match '/terms',   to: 'pages#terms',    via: 'get'
-  match '/privacy', to: 'pages#privacy',  via: 'get'
+  # match '/about',   to: 'pages#about',    via: 'get'
+  # match '/contact', to: 'pages#contact',  via: 'get'
+  # match '/terms',   to: 'pages#terms',    via: 'get'
+  # match '/privacy', to: 'pages#privacy',  via: 'get'
  
 
   # The priority is based upon order of creation: first created -> highest priority.
