@@ -59,6 +59,14 @@ body {
   }
 }
 
+.jumbotron {
+  background-image: url('getsy_banner.jpg');
+  h1, h2 {
+    color: $gray-lighter;
+    font-family: guardian-egyptt, georgia, serif;
+  }
+}
+
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
