@@ -20,6 +20,9 @@ gem 'devise'
 gem 'bh', '~> 1.0'
 gem 'sprockets'
 gem 'jquery-turbolinks'
+gem 'jquery-datatables-rails', '~> 2.2.3'
+gem 'lodash-rails'
+
 
 group :production do
 	gem 'pg'

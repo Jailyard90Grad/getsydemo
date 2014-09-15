@@ -39,5 +39,8 @@ Rails.application.configure do
 
   # Required for Devise gem
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Added based on SO answers to stop loading js twice in development
+  # config.serve_static_assets = false
   
 end
