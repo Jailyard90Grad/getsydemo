@@ -20,7 +20,17 @@ RESOURCES
 Carbon 5 - Rails consultancy
 Collecive Idea - Holland, MI dev/training company
 Logical Reality Design
-Fullscreen
+Fullscreen/bh
+gem Rubocop - tests your code for all sorts of coding errors
+
+9/18
+Hipchat - groups
+Slack - groups
+Mandrill app - email errors from app to yourself thru Mailchimp
+
+9/13
+Installed Datatables! Got it all working with Bootstrap after having to rearrange the order of the 'reguires' statements in application.js 
+Realized that he's only using a Buy It Now button with no way to add additiona products into the cart. Ridiculous. Gonna look at the Agile Wb Apps book and see if I can cobble that together.
 
 9/6
 Installed DB gem

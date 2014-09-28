@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   root 'listings#index'
 
-  get 'about' => 'pages#about', as: 'about'
+  get 'about'   => 'pages#about', as: 'about'
   get 'contact' => 'pages#contact'
-  get 'seller' => 'listings#seller'
-  get 'terms' => 'pages#terms'
+  get 'seller'  => 'listings#seller'
+  get 'terms'   => 'pages#terms'
   get 'privacy' => 'pages#privacy'
 
   # match '/about',   to: 'pages#about',    via: 'get'

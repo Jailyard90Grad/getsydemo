@@ -4,8 +4,8 @@
 
 jQuery ->
 	$('#seller-listings').dataTable()
-	processing: true
-	serverSide:	true
-	stateSave: true
-	ajax: $('#listings').data('source')
-return
+#	processing: true
+#	serverSide:	true
+#	stateSave: true
+#	ajax: $('#listings').data('source')
+#   return
