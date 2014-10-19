@@ -1,0 +1,6 @@
+
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+    <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+            <%= render @cart %>
+    <% end %>
+</div>

@@ -1,29 +1,26 @@
-<div class="jumbotron">
-    <h1>Keepsakes and pix <br />
-        from my travels and shows</h1>
-    <h2>One-of-a-kind trinkets</h2>
-</div>
-<br />
-<div class="center">
-  <div class="row">
-    <% @listings.each do |listing| %>
-      <div class="col-md-3">
-        <div class="thumbnail">
-          <%= link_to image_tag(listing.image.url), listing %>
-          <div class="caption">
-            <h2><%= listing.name %></h2>
-            <p><%= number_to_currency(listing.price) %></p>
-            <p><%= "Sold by #{listing.user.name}" %></p>
-            <% if (user_signed_in?) && (current_user == listing.user) %>
-            <%= link_to 'Edit', edit_listing_path(listing), class: 'btn btn-link' %>
-            <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-link' %></p>
+
+          
+          <div class="row">
+            <% @listings.each do |listing| %>
+              <div class="col-6 col-sm-6 col-lg-4">
+                <div class="thumbnail">
+                  <%= link_to image_tag(listing.image.url), listing %>
+                  <div class="caption">
+                    <h3><%= listing.name %></h3>
+                    <p><%= "Sold by #{listing.user.name}" %></p>
+                    <p><%= number_to_currency(listing.price) %></p>
+                    <br />
+                    <p><%= button_to 'Add to Cart', line_items_path(listing_id: listing), remote: true, class: 'btn btn-primary' %></p>
+
+                    <% if (user_signed_in?) && (current_user == listing.user) %>
+                    <%= link_to 'Edit', edit_listing_path(listing), class: 'btn btn-link' %>
+                    <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-link' %></p>
+                    <% end %>
+                  </div><!--/caption-->
+                </div><!--/thumbnail-->
+              </div><!--/span-->
             <% end %>
-         </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
+          </div><!--/row-->
 
 <br />
 

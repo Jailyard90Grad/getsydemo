@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users
   resources :listings
+  resources :carts
+  resources :line_items
+
+  devise_for :users
 
   root 'listings#index'
 
@@ -9,6 +12,7 @@ Rails.application.routes.draw do
   get 'seller'  => 'listings#seller'
   get 'terms'   => 'pages#terms'
   get 'privacy' => 'pages#privacy'
+  get 'test'    => 'pages#test_page', as: 'test'
 
   # match '/about',   to: 'pages#about',    via: 'get'
   # match '/contact', to: 'pages#contact',  via: 'get'
