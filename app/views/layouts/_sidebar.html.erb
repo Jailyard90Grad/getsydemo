@@ -3,4 +3,22 @@
     <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
             <%= render @cart %>
     <% end %>
+
+    <h3>Filter by:</h3>
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+        Discount
+        </a>
+        <a href="#" class="list-group-item">Genre</a>
+        <a href="#" class="list-group-item">Date</a>
+        <a href="#" class="list-group-item">Location</a>
+        <a href="#" class="list-group-item">Price</a>
+    </div>
+    
+    <div> 
+        <h3>Ads</h3>
+            <img src="http://p-hold.com/300/250" class="img-responsive"/>
+    </div>
+
+
 </div>
