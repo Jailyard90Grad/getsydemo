@@ -24,7 +24,7 @@ class CombineItemsInCart < ActiveRecord::Migration
     LineItem.where("quantity>1").each do |line_item|
       # add individual items
       line_item.quantity.times do
-        LineItem.create cart_id: line_item.cart_id
+        LineItem.create cart_id: line_item.cart_id,
           listing_id: line_item.listing_id, quantity: 1
       end
 
